@@ -3,7 +3,16 @@ package modul.opgave.pkg4;
 public class ModulOpgave4 {
 
     public static void main(String[] args) {
+    int[] radius = {1,3,5};
+    for(int i : radius){
+        double area = (i*i)*Math.PI; 
+        System.out.println(area);
+    }
+       
 
+    }
+}
+/*
         int[][] array = new int[9][9];
         for (int i = 0; i < 9; i++) {
             for(int x = 0 ; x < 9; x++){
@@ -17,9 +26,7 @@ public class ModulOpgave4 {
                 System.out.println(array[j][k]);
             }
         }
-
-    }
-}
+*/
 /*
         int array_length = 12;
         int[] array = new int[12];
