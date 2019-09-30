@@ -11,7 +11,7 @@ public class Student {
 
     }
 
-    public String GetName() {
+    public String getName() {
         return name;
     }
 

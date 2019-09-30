@@ -35,6 +35,16 @@ public class CourseSystem {
 
         es.showParticipants(crs1);
 
+        System.out.println("-----------------");
+
+        es.getStudents();
+
+        System.out.println("-----------------");
+
+        es.removeStudent(std3);
+
+        System.out.println("-----------------");
+
         es.getStudents();
 
     }
