@@ -9,10 +9,10 @@ public class Fan {
     final int medium = 2;
     final int fast = 3;
 
-    private int speed = 1;
-    private boolean on = false;
-    private double radius = 5;
-    String color = "blue";
+    private  int speed = 1;
+    private  boolean on = false;
+    private  double radius = 5;
+    private  String color = "blue";
 
     public Fan(String color, double radius, boolean on, int speed) {
         this.speed = (speed);
