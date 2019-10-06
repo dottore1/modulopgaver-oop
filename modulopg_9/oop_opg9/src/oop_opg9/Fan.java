@@ -82,6 +82,7 @@ public class Fan {
         return this.radius;
     }
 
+    @Override
     public String toString() {
         String text;
         if (this.on == true) {

@@ -11,6 +11,10 @@ public class Oop_opg9 {
         Date time = new Date();
 
         System.out.println(fn1.toString(time));
+        fn1.setRadius(7.0);
+        fn1.setSpeed(3);
+        fn1.setColor("green");
+        System.out.println(fn1.toString(time));
 
     }
 
