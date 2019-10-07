@@ -3,8 +3,28 @@ package modulopgave_10;
 import java.util.*;
 
 public class Modulopgave_10 {
-
+    
     public static void main(String[] args) {
+        
+        FoodItem fi = new FoodItem("Banana", 9.95, new Date());
+        FoodItem fi1 = new FoodItem("grapes", 12.95, new Date());
+        NonFoodItem nfi = new NonFoodItem("T-shirt", 199.95, "small");
+        NonFoodItem nfi1 = new NonFoodItem("Jeans", 199.95, "small");
+        nfi.addMaterials("Medium");
+        
+        Inventory in = new Inventory(fi);
+        
+        System.out.println(in.getInventoryValue());        
+        in.addItem(nfi);
+        in.addItem(nfi1);
+        in.addItem(fi1);
+        System.out.println(in.getInventoryValue());
+        
+        in.printInventory();
+        
+        System.out.println(nfi.toString());
+
+        /*
         Date expire = new Date(10000000);
         FoodItem fi = new FoodItem("Banan", 100, expire);
 
@@ -31,9 +51,9 @@ public class Modulopgave_10 {
             }
 
         }
-        for (int i = 0; i < foods.length; i++) {
-            if (foods[i] != null) {
-                System.out.println(foods[i].toString());
+        for (FoodItem food : foods) {
+            if (food != null) {
+                System.out.println(food.toString());
             }
         }
 
@@ -53,11 +73,12 @@ public class Modulopgave_10 {
             }
 
         }
-        for (int i = 0; i < nonfoods.length; i++) {
-            if (nonfoods[i] != null) {
-                System.out.println(nonfoods[i].toString()); 
+        for (NonFoodItem nonfood : nonfoods) {
+            if (nonfood != null) {
+                System.out.println(nonfood.toString()); 
             }
         }
+    
+         */
     }
-
 }
