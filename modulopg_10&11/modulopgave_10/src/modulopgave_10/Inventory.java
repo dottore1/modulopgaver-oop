@@ -24,6 +24,7 @@ public class Inventory {
         for (Item item : items) {
             totalvalue += Double.parseDouble(item.getPrice());
         }
+        
         return totalvalue;
     }
 

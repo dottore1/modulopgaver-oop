@@ -3,25 +3,35 @@ package modulopgave_10;
 import java.util.*;
 
 public class Modulopgave_10 {
-    
+
     public static void main(String[] args) {
-        
+
         FoodItem fi = new FoodItem("Banana", 9.95, new Date());
         FoodItem fi1 = new FoodItem("grapes", 12.95, new Date());
         NonFoodItem nfi = new NonFoodItem("T-shirt", 199.95, "small");
         NonFoodItem nfi1 = new NonFoodItem("Jeans", 199.95, "small");
         nfi.addMaterials("Medium");
-        
+        nfi.addMaterials("Latge");
+
         Inventory in = new Inventory(fi);
-        
-        System.out.println(in.getInventoryValue());        
+        System.out.println("------------------------------");
+        System.out.println("Test of ValueOfInventory");
+        System.out.println("------------------------------");
+
+        System.out.println(in.getInventoryValue());
         in.addItem(nfi);
         in.addItem(nfi1);
         in.addItem(fi1);
         System.out.println(in.getInventoryValue());
-        
+        System.out.println("------------------------------");
+        System.out.println("Test of PrintInventory");
+        System.out.println("------------------------------");
+
         in.printInventory();
-        
+        System.out.println("------------------------------");
+        System.out.println("Test of toString() at NonFoodItem");
+        System.out.println("------------------------------");
+
         System.out.println(nfi.toString());
 
         /*
