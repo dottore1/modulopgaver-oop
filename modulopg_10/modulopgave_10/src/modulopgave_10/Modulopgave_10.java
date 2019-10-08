@@ -55,9 +55,10 @@ public class Modulopgave_10 {
         }
         for (int i = 0; i < nonfoods.length; i++) {
             if (nonfoods[i] != null) {
-                System.out.println(nonfoods[i].toString()); 
+                System.out.println(nonfoods[i].toString());
             }
         }
+        Object[] ob = new Object[10];
     }
 
 }

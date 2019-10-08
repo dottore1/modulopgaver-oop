@@ -1,21 +1,23 @@
 package modulopgave_10;
 
 public class Item {
+
     private String name;
     private double price;
-    
-    public Item(String name, double price){
+
+    public Item(String name, double price) {
         this.name = name;
-        
+
         this.price = price;
-       
+
     }
-    
-    public String getName(){
+
+    public String getName() {
         return this.name;
     }
-    public double getPrice(){
+
+    public double getPrice() {
         return this.price;
     }
-    
+
 }
