@@ -9,6 +9,7 @@ public class Inventory {
     public Inventory(Item item) {
         items.add(item);
     }
+   
 
     public void addItem(Item item) {
         items.add(item);
@@ -30,7 +31,7 @@ public class Inventory {
 
     public void printInventory() {
         for (Item item : items) {
-            System.out.println("Food name: " + item.getName() + ", Food price: " + item.getPrice());
+            System.out.println(item.toString());
         }
     }
 }
