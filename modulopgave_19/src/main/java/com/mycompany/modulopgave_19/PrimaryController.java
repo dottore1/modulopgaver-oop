@@ -55,6 +55,10 @@ public class PrimaryController implements Initializable {
         lvContacts.setItems(contacts);
         lvContacts.getSelectionModel().selectedItemProperty().addListener(e -> {
             Contact review = lvContacts.getSelectionModel().getSelectedItem();
+            if(review == null)
+            {
+                return;
+            }
             lblFirstName.setText(review.firstname);
             lblLastName.setText(review.lastname);
             lblEmail.setText(review.email);
