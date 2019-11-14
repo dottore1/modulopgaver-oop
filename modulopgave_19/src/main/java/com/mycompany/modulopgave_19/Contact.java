@@ -21,6 +21,24 @@ public class Contact {
         this.email = email;
         this.phone = phone;
     }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    
+    
     @Override
     public String toString(){
         String txt = this.lastname;
